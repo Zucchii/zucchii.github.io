@@ -132,6 +132,21 @@ body {
   .python {width: 65%; background-color: #808080;}
   .html-css {width: 60%; background-color: #808080;}
 
+  
+  
+  ul.my-bullets {
+    list-style-type: none;
+    flex: none;
+  }
+  
+  ul.my-bullets li {
+    list-style-type: disc;
+    height: 5px;
+    width: 5px;
+    padding-left: 10px;
+    flex: none;
+  }
+
  ul#a {
     list-style-type: circle;
     list-style-position: outside;
