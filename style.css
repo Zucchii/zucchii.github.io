@@ -19,14 +19,7 @@ body {
   }
 
 
-@media screen and (min-width: 640px){
-    .flex-container {
-        display: flex;
-        align-items: stretch;
-        padding: 0px;
-        flex: 1 0 0
-    }    
-}
+
 .left-box{
     background-color: rgb(245, 245, 245);
     flex: 1;
@@ -34,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: solid gray 1px;
+    
     padding: 25px;
    justify-content: center;
 }
@@ -58,17 +51,19 @@ body {
   }
 
 
-  ul {
+  header ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     background: red;
   }
-  li {
-    background: lightgray;
+  header li {
+    /* background: lightgray; */
     flex: 1;
     text-align: center;
+    background: rgb(216, 222, 224);
+
   }
   nav a {
     text-decoration: none;
@@ -82,21 +77,8 @@ body {
       font-size: 1em;
     }
   }
-  li:nth-of-type(1) {
-    background: rgb(216, 222, 224);
-  }
-  li:nth-of-type(2) {
-    background: rgb(216, 222, 224);
-  }
-  li:nth-of-type(3) {
-    background: rgb(216, 222, 224);
-  }
-  li:nth-of-type(4) {
-    background: rgb(216, 222, 224);
-  }
-  li:nth-of-type(5) {
-    background: rgb(216, 222, 224);
-  }
+
+ 
 
   img {
     border-radius: 100%;
@@ -137,6 +119,7 @@ body {
   ul.my-bullets {
     list-style-type: none;
     flex: none;
+    line-height: 2;
   }
   
   ul.my-bullets li {
@@ -145,6 +128,7 @@ body {
     width: 5px;
     padding-left: 10px;
     flex: none;
+    line-height: 1.6;
   }
 
  ul#a {
@@ -159,4 +143,17 @@ body {
      }
 
      i.arrow:before{content:'\f138'}
+
+
+     @media screen and (min-width: 640px){
+      .flex-container {
+          display: flex;
+          align-items: stretch;
+          padding: 0px;
+          flex: 1 0 0;
+      }    
+      .left-box {
+        border-right: solid gray 1px;
+      }
+  }
     
