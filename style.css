@@ -34,13 +34,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right-style: dotted ;
+    border-right: solid gray 1px;
     padding: 25px;
    justify-content: center;
 }
 .right-box{
     background: rgb(245, 245, 245);
-    flex: 0 1 50%;
+    flex: 0 1 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,11 +49,12 @@ body {
     
     padding: 25px;
 }
-p.center-aligned {
+.center-aligned {
     text-align: center;
   }
-  p.right-aligned {
-    text-align: right;
+
+  .left-aligned {
+    align-self: flex-start;
   }
 
 
@@ -108,6 +109,10 @@ p.center-aligned {
     font-size: 2em;
   }
 
+  .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+  }
+
   * {box-sizing: border-box}
 
   .container {
@@ -137,4 +142,6 @@ p.center-aligned {
     line-height: 1.6;
     justify-self: start;
      }
+
+     i.arrow:before{content:'\f138'}
     
